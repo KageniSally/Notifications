@@ -1,19 +1,36 @@
 :root {
-    White: hsl(0, 0%, 100%) --very-light-grayish-blue: hsl(210, 60%, 98%) --light-grayish-blue-1: hsl(211, 68%, 94%) --light-grayish-blue-2: hsl(205, 33%, 90%) --grayish-blue: hsl(219, 14%, 63%) --dark-grayish-blue: hsl(219, 12%, 42%) --very-dark-blue: hsl(224, 21%, 14%)
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
 }
 
 * {
     padding: 0 margin;
     box-sizing: border-box;
-    /* font-family: ; */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight:500;
 
 }
 
 .container {
     max-width: 60vw;
-    border: 1px solid;
-    margin: 0px auto;
+    /* border: 1px solid; */
+    margin: 2rem auto;
     padding: 1rem;
+    border: 2px solid rgba(255,255,255,.2);
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, .2);
+    line-height: 40px;
 }
 
 .top {
@@ -24,10 +41,25 @@
 
 .notifications {
     display: flex;
+    align-items: baseline;
 }
-
+.notifications h3{
+    font-weight: 800
+}
+.default-text h4{
+    color:var(--grayish-blue);
+}
+.default-text h4:hover{
+    color:var(--blue);
+    cursor:pointer;
+}
 .notifications label {
-    margin-top: 10px;
+    color:white;
+    background-color:var(--blue);
+    margin: .4rem .4rem;
+    border: 1px solid;
+    padding:0 5px;    /* top-bottom, left-right*/
+    border-radius: 5px;
 }
 
 .content {
