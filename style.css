@@ -22,7 +22,7 @@
     max-width: 60vw;
     /* border: 1px solid; */
     margin: 2rem auto;
-    padding: 1rem;
+    padding: .5rem 3rem;
     border: 2px solid rgba(255,255,255,.2);
     background-color: white;
     box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
@@ -46,13 +46,6 @@
 .notifications h3{
     font-weight: 800
 }
-.default-text h4{
-    color:var(--grayish-blue);
-}
-.default-text h4:hover{
-    color:var(--blue);
-    cursor:pointer;
-}
 .notifications label {
     color:white;
     background-color:var(--blue);
@@ -61,39 +54,73 @@
     padding:0 5px;    /* top-bottom, left-right*/
     border-radius: 5px;
 }
+.default-text h4{
+    color:var(--grayish-blue);
+}
+.default-text h4:hover{
+    color:var(--blue);
+    cursor:pointer;
+}
 
 .content {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    row-gap: 1rem;
+    /* row-gap: 1rem; */
 }
 
 .message-unread {
-    border: 1px solid;
+    background-color: var(--very-light-grayish-blue);
+    /* border: 1px solid; */
     padding: 15px;
     grid-gap: 2rem;
     display: flex;
+    margin:.7rem auto;
 }
 
-.user-image {}
+/* .user-image {} */
 
+.main-message{
+    display:grid;
+}
 .user-content {
     display: inline-flex;
     flex-direction: row;
     align-items: baseline;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
 }
-
-.message-read {
-    font-weight: 500;
-    font-size: 16px;
-    border: 1px solid;
+.user-content label{
+    /* flex-wrap: nowrap; */
+    font-weight: 800;
+}
+.user-content label:hover{
+    /* flex-wrap: nowrap; */
+    font-weight: 800;
+    color:var(--blue);
+    cursor: pointer;
+}
+.user-content .reaction{
+    color:var(--dark-grayish-blue);
+}
+.user-content .message{
+    font-weight: 800;
+    color:var(--dark-grayish-blue);
+}
+.user-content .message:hover{
+    color:var(--blue);
+}
+.user-content span{
+    color:var(--red);
+    width:10px;
+}
+.message-read{
+    background-color: var(--white);
+    /* border: 1px solid; */
     padding: 15px;
+    grid-gap: 2rem;
     display: flex;
-    grid-gap: 1rem;
-
+    margin:.7rem auto;
 }
-
-.reaction {
-    font-weight: 600;
+#viewed{
+    border:1px solid;
+    padding: .5rem 1rem;
 }
