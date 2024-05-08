@@ -1,121 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-<div class="container">
-  <div class="top">
-    <div>
-      <h3> Notifications </h3>
-        <span> 3 </span>
-    </div>
+  <div class="container">
+    <div class="top">
+      <div class="notifications">
+        <div>
+          <h3> Notifications </h3>
 
-    <div>
-      Mark all as read
-    </div>
-  </div>
-
-  <div class="content">
-
-    <div class="message-unread">
-      <div class="user-image">
-        <img src="assets/images/avatar-mark-webber.webp" alt="User avatar">
+        </div>
+        <div><label> 3 </label></div>
       </div>
-      <div class="user-content">
-        <label> Mark Webber </label>
-        <p class="reaction">reacted to your recent post</p>
-        <p class="message"> My first tournament today!</p>
-        <p class="time"> 1m ago </p>
-      </div>
-    </div>
-  
-    <div class="message-unread">
-      <div class="user-image">
-        <img src="assets/images/avatar-angela-gray.webp" alt="User avatar">
-      </div>
-      <div class="user-content">
-        <label> Angela Gray </label>
-        <p class="reaction">followed you </p>
-        <p class="time"> 5m ago </p>
-      </div>
-    </div>
-
-    <div class="message-unread">
-      <div class="user-image">
-        <img src="assets/images/avatar-jacob-thompson.webp" alt="User avatar">
-      </div>
-      <div class="user-content">
-        <label> Jacob Thompson </label>
-        <p class="reaction">has joined your group</p>
-        <p class="message"> Chess Club</p>
-        <p class="time"> 1 day ago </p>
-      </div>
-    </div>
-
-    <div class="message-unread">
-      <div class="user-image">
-        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="User avatar">
-      </div>
-      <div class="user-content">
-        <label> Rizky Hasanuddin </label>
-        <p class="reaction">sent you a private message</p>
-        <p class="message" id="viewed"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
-        <p class="time"> 5 days ago </p>
-      </div>
-    </div>
-    <div class="message-read">
-      <div class="user-image">
-        <img src="assets/images/avatar-kimberly-smith.webp" alt="User avatar">
+      <div>
+        Mark all as read
       </div>
 
-      <div class="user-content">
-        <label> Kimberly Smith </label>
-        <p class="reaction"> commented on your picture</p>
-        <p class="time"> 1 week ago </p>
-      </div>
-
-      <div class="user-text-image">
-        <img src="assets/images/image-chess.webp" alt="User avatar">
-      </div>
     </div>
 
-    <div class="message-read">
-      <div class="user-image">
-        <img src="assets/images/avatar-nathan-peterson.webp" alt="User avatar">
-      </div>
-      <div class="user-content">
-        <label> Nathan Peterson </label>
-        <p class="reaction">reacted to your recent post</p>
-        <p class="message"> 5 end-game strategies to increase your win rate</p>
-        <p class="time"> 2 weeks ago </p>
-      </div>
-    </div>
-    <div class="message-unread">
-      <div class="user-image">
-        <img src="assets/images/avatar-anna-kim.webp" alt="User avatar">
-      </div>
-      <div class="user-content">
-        <label> Anna Kim </label>
-        <p class="reaction">left the group</p>
-        <p class="message"> Chess Club</p>
-        <p class="time"> 2 weeks ago </p>
-      </div>
-    </div>
+    <div class="content">
 
-  </div>
+      <div class="message-unread">
+        <div class="user-image">
+          <img src="assets/images/avatar-mark-webber.webp" alt="User avatar">
+        </div>
+        <div class="user-content">
+          <label> Mark Webber </label>
+          <p class="reaction">reacted to your recent post</p>
+          <p class="message"> My first tournament today!</p><br>
+          <div>
+            <p class="time"> 1m ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-unread">
+        <div class="user-image">
+          <img src="assets/images/avatar-angela-gray.webp" alt="User avatar">
+        </div>
+        <div class="user-content">
+          <label> Angela Gray </label>
+          <p class="reaction">followed you </p><br>
+          <p class="time"> 5m ago </p>
+        </div>
+      </div>
+
+      <div class="message-unread">
+        <div class="user-image">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="User avatar">
+        </div>
+        <div class="user-content">
+          <label> Jacob Thompson </label>
+          <p class="reaction">has joined your group</p>
+          <p class="message"> Chess Club</p><br>
+          <p class="time"> 1 day ago </p>
+        </div>
+      </div>
+
+      <div class="message-unread">
+        <div class="user-image">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="User avatar">
+        </div>
+        <div class="user-content">
+          <label> Rizky Hasanuddin </label>
+          <p class="reaction">sent you a private message</p>
+          <p class="message" id="viewed"> Hello, thanks for setting up the Chess Club. I've been a member for a few
+            weeks now and I'm already having lots of fun and improving my game.</p>
+          <p class="time"> 5 days ago </p>
+        </div>
+      </div>
+      <div class="message-read">
+        <div class="user-image">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="User avatar">
+        </div>
+
+        <div class="user-content">
+          <label> Kimberly Smith </label>
+          <p class="reaction"> commented on your picture</p>
+          <p class="time"> 1 week ago </p>
+        </div>
+
+        <div class="user-text-image">
+          <img src="assets/images/image-chess.webp" alt="User avatar">
+        </div>
+      </div>
+
+      <div class="message-read">
+        <div class="user-image">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="User avatar">
+        </div>
+        <div class="user-content">
+          <label> Nathan Peterson </label>
+          <p class="reaction">reacted to your recent post</p>
+          <p class="message"> 5 end-game strategies to increase your win rate</p>
+          <p class="time"> 2 weeks ago </p>
+        </div>
+      </div>
+      <div class="message-unread">
+        <div class="user-image">
+          <img src="assets/images/avatar-anna-kim.webp" alt="User avatar">
+        </div>
+        <div class="user-content">
+          <label> Anna Kim </label>
+          <p class="reaction">left the group</p>
+          <p class="message"> Chess Club</p>
+          <p class="time"> 2 weeks ago </p>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 </body>
+
 </html>

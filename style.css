@@ -1,0 +1,67 @@
+:root {
+    White: hsl(0, 0%, 100%) --very-light-grayish-blue: hsl(210, 60%, 98%) --light-grayish-blue-1: hsl(211, 68%, 94%) --light-grayish-blue-2: hsl(205, 33%, 90%) --grayish-blue: hsl(219, 14%, 63%) --dark-grayish-blue: hsl(219, 12%, 42%) --very-dark-blue: hsl(224, 21%, 14%)
+}
+
+* {
+    padding: 0 margin;
+    box-sizing: border-box;
+    /* font-family: ; */
+
+}
+
+.container {
+    max-width: 60vw;
+    border: 1px solid;
+    margin: 0px auto;
+    padding: 1rem;
+}
+
+.top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.notifications {
+    display: flex;
+}
+
+.notifications label {
+    margin-top: 10px;
+}
+
+.content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    row-gap: 1rem;
+}
+
+.message-unread {
+    border: 1px solid;
+    padding: 15px;
+    grid-gap: 2rem;
+    display: flex;
+}
+
+.user-image {}
+
+.user-content {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
+
+.message-read {
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid;
+    padding: 15px;
+    display: flex;
+    grid-gap: 1rem;
+
+}
+
+.reaction {
+    font-weight: 600;
+}
