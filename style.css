@@ -14,8 +14,14 @@
     padding: 0 margin;
     box-sizing: border-box;
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight:500;
+    font-weight: 500;
+    font-size: 15px;
 
+
+}
+
+body {
+    background-color: var(--very-light-grayish-blue);
 }
 
 .container {
@@ -23,14 +29,14 @@
     /* border: 1px solid; */
     margin: 2rem auto;
     padding: .5rem 3rem;
-    border: 2px solid rgba(255,255,255,.2);
+    border: 2px solid rgba(255, 255, 255, .2);
     background-color: white;
-    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, .5);
     border-radius: 10px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: rgba(255, 255, 255, .2);
-    line-height: 40px;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .2);
+    line-height: 40px; */
 }
 
 .top {
@@ -43,23 +49,27 @@
     display: flex;
     align-items: baseline;
 }
-.notifications h3{
+
+.notifications h3 {
     font-weight: 800
 }
+
 .notifications label {
-    color:white;
-    background-color:var(--blue);
-    margin: .4rem .4rem;
+    color: white;
+    background-color: var(--blue);
     border: 1px solid;
-    padding:0 5px;    /* top-bottom, left-right*/
+    padding: 0 5px;
+    /* top-bottom, left-right*/
     border-radius: 5px;
 }
-.default-text h4{
-    color:var(--grayish-blue);
+
+.default-text h4 {
+    color: var(--grayish-blue);
 }
-.default-text h4:hover{
-    color:var(--blue);
-    cursor:pointer;
+
+.default-text h4:hover {
+    color: var(--blue);
+    cursor: pointer;
 }
 
 .content {
@@ -68,59 +78,96 @@
     /* row-gap: 1rem; */
 }
 
+
+
 .message-unread {
     background-color: var(--very-light-grayish-blue);
     /* border: 1px solid; */
-    padding: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
     grid-gap: 2rem;
     display: flex;
-    margin:.7rem auto;
+    margin: .7rem auto;
+    border-radius: 10px;
 }
 
-/* .user-image {} */
-
-.main-message{
-    display:grid;
+.user-image img {
+    height: 45px;
+    width: 45px;
 }
+
+.user-text-image img {
+    height: 45px;
+    width: 45px;
+    margin-left: 35px;
+}
+
+div p {
+    margin-left: 2px;
+}
+
+/* .main-message {
+    display: grid;
+} */
+
 .user-content {
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    /* flex-direction: row;
+    align-items: baseline; */
+    /* flex-wrap: nowrap; */
+}
+
+.user-content-main {
+    display: flex;
     align-items: baseline;
-    /* flex-wrap: nowrap; */
 }
-.user-content label{
-    /* flex-wrap: nowrap; */
+
+
+
+.user-content label {
+
     font-weight: 800;
 }
-.user-content label:hover{
-    /* flex-wrap: nowrap; */
+
+.user-content label:hover {
+
     font-weight: 800;
-    color:var(--blue);
+    color: var(--blue);
     cursor: pointer;
 }
-.user-content .reaction{
-    color:var(--dark-grayish-blue);
+
+.user-content .reaction {
+    color: var(--dark-grayish-blue);
 }
-.user-content .message{
+
+.user-content .message {
     font-weight: 800;
-    color:var(--dark-grayish-blue);
+    color: var(--dark-grayish-blue);
 }
-.user-content .message:hover{
-    color:var(--blue);
+
+.user-content .message:hover {
+    color: var(--blue);
 }
-.user-content span{
-    color:var(--red);
-    width:10px;
+
+.user-content span {
+    color: var(--red);
+    width: 10px;
 }
-.message-read{
+
+.message-read {
     background-color: var(--white);
     /* border: 1px solid; */
-    padding: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
     grid-gap: 2rem;
     display: flex;
-    margin:.7rem auto;
+    margin: .7rem auto;
 }
-#viewed{
-    border:1px solid;
+
+#viewed {
+    border: 1px solid var(--light-grayish-blue-1);
     padding: .5rem 1rem;
 }
